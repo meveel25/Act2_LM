@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+
+<!ELEMENT biblioteca (libros, revistas, periodicos)>
+<!ELEMENT libros (libro+)>
+<!ELEMENT libro (titulo, capitulo+, indice_libro, sinopsis)>
+
+<!-- elementos de libro -->
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT capitulo (titulo_capitulo, contenido_capitulo)>
+<!ELEMENT indice_libro (#PCDATA)>
+<!ELEMENT sinopsis (#PCDATA)>
+
+<!-- definimos los atributos de libro -->
+<!ATTLIST libro id ID #REQUIRED>
+<!ATTLIST libro tipo_clase (novela | infantil | didactico) #REQUIRED>
+<!ATTLIST libro numero_paginas_libro CDATA #REQUIRED> 
+
+<!-- elementos de capitulo -->
+<!ELEMENT titulo_capitulo (#PCDATA)>
+<!ELEMENT contenido_capitulo (#PCDATA)>
+
+
+<!-- definimos atributos de capitulo-->
+<!ATTLIST capitulo numero_paginas_capitulo CDATA #REQUIRED>
+
+<!-- definimos los atributo de contenido-->
+<!ATTLIST contenido_capitulo enlace_info CDATA #REQUIRED>
+
+
+<!-- definimos elementos de revistas-->
+
+<!ELEMENT revistas (revista+)>
+
+<!ELEMENT revista (titulo_revista, numero_revista, indice_contenido, secciones_revista+)>
+<!ELEMENT titulo_revista (#PCDATA)>
+<!ELEMENT numero_revista (#PCDATA)>
+<!ELEMENT indice_contenido (#PCDATA)>
+<!ELEMENT secciones_revista (contenido_seccion)>
+
+
+<!-- atributo de revista-->
+<!ATTLIST revista id ID #REQUIRED>
+<!ATTLIST revista tipo_clase (informatica | corazon | coches | investigacion | otras) #REQUIRED>
+<!ATTLIST revista numero_paginas CDATA #REQUIRED>
+
+<!-- elemento de secciones -->
+<!ELEMENT contenido_seccion (#PCDATA)>
+
+<!--  atributo de secciones -->
+<!ATTLIST secciones_revista numero_paginas CDATA #REQUIRED>
+
+<!-- atributo elemento contenido -->
+<!ATTLIST contenido_seccion enlace_info CDATA #REQUIRED>
+
+
+<!-- definimos elementos de periodicos -->
+
+<!ELEMENT periodicos (periodico+)>
+
+<!-- definimos elementos de periodico -->
+<!ELEMENT periodico (secciones_periodico+, indice_periodico)>
+<!ELEMENT secciones_periodico (articulos+)>
+<!ELEMENT articulos (contenido_articulo)>
+<!ELEMENT contenido_articulo (#PCDATA)>
+<!ELEMENT indice_periodico (#PCDATA)>
+
+<!-- definimos atributos de periodico -->
+<!ATTLIST periodico id ID #REQUIRED>
+<!ATTLIST periodico tipo_clase (nacionales | internacionales ) #REQUIRED>
+<!ATTLIST periodico fecha_publicacion CDATA #REQUIRED>
+
+
+<!-- definimos atributos de secciones-->
+<!ATTLIST secciones_periodico tipo_seccion ( economica | opinion | deportes | nacional | internacional ) #REQUIRED>
+<!ATTLIST articulos autor CDATA #REQUIRED>
+<!ATTLIST contenido_articulo enlace_info CDATA #REQUIRED>
+
+]>
+
+<biblioteca>
+    <libros>
+
+        <libro id="L0001" tipo_clase="novela" numero_paginas_libro="400">
+
+            <titulo>La vida de Tony</titulo>
+
+            <capitulo numero_paginas_capitulo="50">
+
+                <titulo_capitulo>El padre del mecanico</titulo_capitulo>
+
+                <contenido_capitulo enlace_info="http\\:unavidamaravillosa.org"></contenido_capitulo>
+
+            </capitulo>
+            
+            <capitulo numero_paginas_capitulo="70">
+
+                <titulo_capitulo>la vida del mecanico</titulo_capitulo>
+
+                <contenido_capitulo enlace_info="http\\:unavidamaravillosa.org"></contenido_capitulo>
+
+            </capitulo>
+
+            <capitulo numero_paginas_capitulo="90">
+
+                <titulo_capitulo>la muerte del mecanico</titulo_capitulo>
+
+                <contenido_capitulo enlace_info="http\\:unavidamaravillosa.org"></contenido_capitulo>
+
+            </capitulo>
+
+            <indice_libro>
+                El padre del mecanico pag 3
+                la vida del mecanico pag 51
+                la muerte del mecanico pag 91
+            </indice_libro>
+
+            <sinopsis>
+                "La vida de Tony" es un fascinante relato sobre la vida de Tony, un mecánico de pueblo que poseía una habilidad innata para crear máquinas complejas a partir de chatarra. Su obsesión por la robótica lo llevó a desarrollar prototipos cada vez más avanzados, hasta que finalmente logró construir un autómata con la capacidad de aprender y adaptarse a su entorno.
+                Pero la creación de Antonio no tardó en llamar la atención de importantes empresas tecnológicas, quienes trataron de persuadirlo para que vendiera sus patentes y secretos de construcción. A pesar de las tentadoras ofertas, Antonio se negó rotundamente, sabiendo que la verdadera recompensa estaba en la satisfacción de ver sus creaciones en acción. Pero la fama y el dinero nunca estuvieron lejos, y pronto su vida se vería amenazada por aquellos que codiciaban su talento.   
+            </sinopsis>
+
+        </libro>
+
+        <libro id="L0551" tipo_clase="infantil" numero_paginas_libro="800">
+
+            <titulo>La vida de Julia</titulo>
+
+            <capitulo numero_paginas_capitulo="80">
+
+                <titulo_capitulo>La hermana de julia</titulo_capitulo>
+
+                <contenido_capitulo enlace_info="http\\:unavidamaravillosajulia.org"></contenido_capitulo>
+
+            </capitulo>
+            
+            <capitulo numero_paginas_capitulo="47">
+
+                <titulo_capitulo>El perro de Julia</titulo_capitulo>
+
+                <contenido_capitulo enlace_info="http\\:unavidamaravillosajulia.org"></contenido_capitulo>
+
+            </capitulo>
+
+            <capitulo numero_paginas_capitulo="100">
+
+                <titulo_capitulo>Julia y las plantas</titulo_capitulo>
+
+                <contenido_capitulo enlace_info="http\\:unavidamaravillosajulia.org"></contenido_capitulo>
+
+            </capitulo>
+
+            <indice_libro>
+                La hermana de julia pag 3
+                El perro de Julia pag 83
+                Julia y las plantas pag 130
+            </indice_libro>
+
+            <sinopsis>
+                "La vida de Julia" es un conmovedor relato sobre la vida de una joven apasionada por la naturaleza. Julia, una chica de 12 años, vive con su perro y su hermana mayor en una pequeña casa en las afueras de la ciudad. A pesar de su vida sencilla, Julia encuentra en sus plantas una fuente inagotable de felicidad y esperanza.
+                La historia sigue a Julia mientras enfrenta los desafíos de la vida cotidiana, desde el acoso escolar hasta las dificultades financieras de su familia. Sin embargo, su amor por las plantas y la ayuda incondicional de su perro y su hermana le permiten superar cualquier obstáculo que se le presente. "Julia y su mundo de plantas" es una historia conmovedora que celebra la belleza de la naturaleza y la fuerza del amor familiar.
+            </sinopsis>
+
+        </libro>
+
+        <libro id="L8551" tipo_clase="didactico" numero_paginas_libro="1500">
+
+        <titulo>La huerta murciana</titulo>
+
+        <capitulo numero_paginas_capitulo="50">
+
+        <titulo_capitulo>Tomates</titulo_capitulo>
+
+        <contenido_capitulo enlace_info="http\\:lahuertadelhortelano.org"></contenido_capitulo>
+
+            </capitulo>
+            
+            <capitulo numero_paginas_capitulo="47">
+
+                <titulo_capitulo>Pepinos</titulo_capitulo>
+
+                <contenido_capitulo enlace_info="http\\:lahuertadelhortelano.org"></contenido_capitulo>
+
+            </capitulo>
+
+            <capitulo numero_paginas_capitulo="85">
+
+                <titulo_capitulo>Cebolletas</titulo_capitulo>
+
+                <contenido_capitulo enlace_info="http\\:lahuertadelhortelano.org"></contenido_capitulo>
+
+            </capitulo>
+
+             <capitulo numero_paginas_capitulo="26">
+
+                <titulo_capitulo>Lechugas</titulo_capitulo>
+
+                <contenido_capitulo enlace_info="http\\:lahuertadelhortelano.org"></contenido_capitulo>
+
+            </capitulo>
+
+            <indice_libro>
+                Tomates pag 50
+                Pepinos pag 97
+                Cebolletas pag 165
+                Lechugas pag 180
+            </indice_libro>
+
+            <sinopsis>
+                El libro "La huerta murciana: un viaje por sus cultivos" es una obra didáctica que nos sumerge en el mundo de la agricultura murciana. Con un enfoque práctico, esta obra nos introduce en los secretos de la huerta, desde la siembra hasta la recolección, pasando por la selección de semillas y el cuidado de las plantas.
+                El autor nos guía por un recorrido visual a través de los cultivos más representativos de la región murciana, explicando en detalle sus características, sus cuidados y su evolución histórica. Este libro es una herramienta indispensable para todos aquellos que quieran iniciarse en el mundo de la agricultura o para los amantes de la gastronomía que quieran conocer en profundidad los productos autóctonos de la huerta murciana.
+            </sinopsis>
+
+        </libro>
+    </libros>
+
+    <revistas>
+
+        <revista id="R0001" tipo_clase="corazon" numero_paginas="50">
+
+            <titulo_revista>Hola</titulo_revista>
+
+            <numero_revista>0597</numero_revista>
+
+            <indice_contenido>
+             Exclisiva Preysler
+             Sofia Borbón
+             Belleza
+             Salud
+             </indice_contenido>
+
+            <secciones_revista numero_paginas="10">
+
+                <contenido_seccion enlace_info="http:holaPreysler"></contenido_seccion>
+
+            </secciones_revista>
+
+           <secciones_revista numero_paginas="15">
+
+                <contenido_seccion enlace_info="http:holaSofia"></contenido_seccion>
+
+            </secciones_revista>
+
+            <secciones_revista numero_paginas="25">
+
+                <contenido_seccion enlace_info="http:holabelleza"></contenido_seccion>
+
+            </secciones_revista>
+
+        </revista>
+
+        <revista id="R1414" tipo_clase="coches" numero_paginas="30">
+
+            <titulo_revista>El nano ha vuelto</titulo_revista>
+
+            <numero_revista>1259</numero_revista>
+
+            <indice_contenido>
+            Nano podio
+            Lance esu mejor escudero
+            Reportaje con Matt Wattson alias "El Zanahorio"
+             </indice_contenido>
+
+            <secciones_revista numero_paginas="7">
+
+                <contenido_seccion enlace_info="http:elnanopodio"></contenido_seccion>
+
+            </secciones_revista>
+
+           <secciones_revista numero_paginas="14">
+
+                <contenido_seccion enlace_info="http:LanceStroll"></contenido_seccion>
+
+            </secciones_revista>
+
+            <secciones_revista numero_paginas="14">
+
+                <contenido_seccion enlace_info="http:elmecanico"></contenido_seccion>
+
+            </secciones_revista>
+
+        </revista>
+
+
+    </revistas>
+
+    <periodicos>
+
+        <periodico id="P0001" tipo_clase="nacionales" fecha_publicacion="2022-06-25">
+
+            <secciones_periodico tipo_seccion="deportes">
+
+                <articulos autor="Raul Gonzalez">
+
+                    <contenido_articulo enlace_info="http\\:ladecimocuartayaestaaqui"></contenido_articulo>
+
+                </articulos>
+                
+            </secciones_periodico>
+
+            <secciones_periodico tipo_seccion="deportes">
+
+                <articulos autor="Tony Nadal">
+
+                    <contenido_articulo enlace_info="http\\.:lvamosrafa"></contenido_articulo>
+
+                </articulos>
+                
+            </secciones_periodico>
+
+            <indice_periodico>
+            La decimo cuarta
+            Roland Garros
+            </indice_periodico>
+
+        </periodico>
+
+        
+        <periodico id="P5001" tipo_clase="internacionales" fecha_publicacion="2023-11-18">
+
+            <secciones_periodico tipo_seccion="opinion">
+
+                <articulos autor="Mario Garcia">
+
+                    <contenido_articulo enlace_info="http\\:guantanamo"></contenido_articulo>
+
+                </articulos>
+                
+            </secciones_periodico>
+
+            <secciones_periodico tipo_seccion="nacional">
+
+                <articulos autor="Eva Rodriguez">
+
+                    <contenido_articulo enlace_info="http\\:elcongreso"></contenido_articulo>
+
+                </articulos>
+                
+            </secciones_periodico>
+
+            <indice_periodico>
+            Carceles miticas
+            El congreso de los diputados
+            </indice_periodico>
+
+        </periodico>
+
+    </periodicos>
+ 
+
+</biblioteca>
