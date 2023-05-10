@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+    <!ELEMENT biblioteca (libros, revistas, periodicos)>
+<!-- DTD elemento libros -->
+<!ELEMENT libros (libro*)>
+
+<!-- DTD elemento libro -->
+<!ELEMENT libro (titulo,capitulos,indice,sinopsis)>
+<!ATTLIST libro id ID #REQUIRED>
+<!ATTLIST libro tipo_clase (novela | infantil | didactico) #REQUIRED>
+<!ATTLIST libro num_pag CDATA #REQUIRED>
+
+<!-- DTD elemento título -->
+<!ELEMENT titulo (#PCDATA)>
+
+<!-- DTD elemento capitulos -->
+<!ELEMENT capitulos (capitulo+)>
+<!ELEMENT capitulo (titulo,contenido)>
+<!ATTLIST capitulo num_pag CDATA #REQUIRED>
+<!ELEMENT contenido (#PCDATA)>
+<!ATTLIST contenido info CDATA #REQUIRED>
+
+<!-- DTD elemento indice -->
+<!ELEMENT indice (#PCDATA)>
+
+<!-- DTD elemento sinopsis -->
+<!ELEMENT sinopsis (#PCDATA)>
+
+<!-- DTD elemento revistas -->
+<!ELEMENT revistas (revista*)>
+
+<!-- DTD elemento revista -->
+<!ELEMENT revista (titulo,numero_revista,indice,secciones)>
+<!ATTLIST revista id ID #REQUIRED>
+<!ATTLIST revista tipo_clase (informatica | corazon | coches |investigacion |otras) #REQUIRED>
+<!ATTLIST revista num_pag CDATA #REQUIRED>
+
+<!-- DTD elemento numero_revista -->
+<!ELEMENT numero_revista (#PCDATA)>
+
+<!-- DTD elemento secciones -->
+<!ELEMENT secciones (seccion+)>
+<!ELEMENT seccion (contenido)>
+<!ATTLIST seccion num_pag CDATA #REQUIRED>
+
+<!-- DTD elemento periodicos -->
+<!ELEMENT periodicos (periodico*)>
+
+<!-- DTD elemento periodico -->
+<!ELEMENT periodico (secciones_p,indice)>
+<!ATTLIST periodico id ID #REQUIRED>
+<!ATTLIST periodico tipo_clase (nacional | internacional) #REQUIRED>
+<!ATTLIST periodico fecha_publi CDATA #REQUIRED>
+
+<!-- DTD elemento seccion (el elemento secciones ya está definido) -->
+<!ELEMENT secciones_p (seccion_p+)>
+<!ELEMENT seccion_p (articulos)>
+<!ATTLIST seccion_p tipo_seccion (economica | opinion | deportes | nacional |internacional) #REQUIRED>
+
+<!-- DTD elemento articulos -->
+<!ELEMENT articulos (articulo+)>
+<!ELEMENT articulo (contenido)>
+<!ATTLIST articulo autor CDATA #REQUIRED>
+]>
+<biblioteca>
+    <libros>
+        <libro id="L001" tipo_clase="novela" num_pag="352">
+            <titulo>Anna Karenina</titulo>
+            <capitulos>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+            </capitulos>
+            <indice>Primer capítulo, segundo capítulo, tercer capítulo (...)</indice>
+            <sinopsis></sinopsis>
+        </libro>
+        <libro id="L0002" tipo_clase="didactico" num_pag="545">
+            <titulo>Fisiología aplicada</titulo>
+            <capitulos>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+            </capitulos>
+            <indice></indice>
+            <sinopsis></sinopsis>
+        </libro>
+        <libro id="L003" tipo_clase="infantil" num_pag="50">
+            <titulo>Fray Perico y su borrico</titulo>
+            <capitulos>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="25">
+                    <titulo></titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+            </capitulos>
+            <indice></indice>
+            <sinopsis></sinopsis>
+        </libro>
+    </libros>
+    <revistas>
+        <revista id="R0001" tipo_clase="informatica" num_pag="30">
+            <titulo></titulo>
+            <numero_revista></numero_revista>
+            <indice></indice>
+            <secciones>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R0002" tipo_clase="corazon" num_pag="30">
+            <titulo></titulo>
+            <numero_revista></numero_revista>
+            <indice></indice>
+            <secciones>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R0003" tipo_clase="coches" num_pag="30">
+            <titulo></titulo>
+            <numero_revista></numero_revista>
+            <indice></indice>
+            <secciones>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R0004" tipo_clase="investigacion" num_pag="30">
+            <titulo></titulo>
+            <numero_revista></numero_revista>
+            <indice></indice>
+            <secciones>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R0005" tipo_clase="otras" num_pag="30">
+            <titulo></titulo>
+            <numero_revista></numero_revista>
+            <indice></indice>
+            <secciones>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="">
+                    <contenido info="url"></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas>
+
+    <periodicos>
+        <periodico id="P0001" tipo_clase="nacional" fecha_publi="01/02/2023">
+            <secciones_p>
+                <seccion_p tipo_seccion="economica">
+                    <articulos>
+                        <articulo autor="g">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="g">
+                            <contenido info="url"></contenido>
+                        </articulo>
+
+                        <articulo autor="g">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="opinion">
+                    <articulos>
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="deportes">
+                    <articulos>
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="nacional">
+                    <articulos>
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="internacional">
+                    <articulos>
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+            </secciones_p>
+            <indice></indice>
+        </periodico>
+
+        <periodico id="P0002" tipo_clase="internacional" fecha_publi="03/05/2023">
+            <secciones_p>
+                <seccion_p tipo_seccion="economica">
+                    <articulos>
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                 </seccion_p>
+
+                <seccion_p tipo_seccion="opinion">
+                    <articulos>
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="deportes">
+                    <articulos>
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="nacional">
+                    <articulos>
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="internacional">
+                    <articulos>
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+            </secciones_p>
+            <indice></indice>
+        </periodico>
+    </periodicos>
+</biblioteca>

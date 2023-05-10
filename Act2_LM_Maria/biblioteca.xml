@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">-->
+<biblioteca  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
+    <libros>
+        <libro id="L0008" tipo_clase="novela" num_pag="556">
+            <titulo>Ana Karenina</titulo>
+            <capitulos>
+                <capitulo num_pag="25">
+                    <titulo>Primera parte: Capítulo I​</titulo>
+                    <contenido info="https://es.wikisource.org/wiki/Ana_Karenina_I:_Cap%C3%ADtulo_I"></contenido>
+                </capitulo>
+                <capitulo num_pag="17">
+                    <titulo>Primera parte: Capítulo II</titulo>
+                    <contenido info="https://es.wikisource.org/wiki/Ana_Karenina_I:_Cap%C3%ADtulo_II"></contenido>
+                </capitulo>
+                <capitulo num_pag="20">
+                    <titulo>Primera parte: Capítulo III​</titulo>
+                    <contenido info="https://es.wikisource.org/wiki/Ana_Karenina_I:_Cap%C3%ADtulo_III"></contenido>
+                </capitulo>
+                <capitulo num_pag="15">
+                    <titulo>Primera parte: Capítulo IV​</titulo>
+                    <contenido info="https://es.wikisource.org/wiki/Ana_Karenina_I:_Cap%C3%ADtulo_IV"></contenido>
+                </capitulo>
+            </capitulos>
+            <indice>Primera parte: Capítulo I, Primera parte: Capítulo II, Primera parte: Capítulo III, 
+                Primera parte: Capítulo IV (...)
+            </indice>
+            <sinopsis>Su argumento se centra en la vida de Ana Karenina, una mujer casada con un alto funcionario
+                que se enamora de un joven militar y decide dejarlo todo por él, desafiando así las férreas convenciones 
+                sociales de la época. Finalmente, termina con su vida víctima de una sociedad que la condena.
+            </sinopsis>
+        </libro>
+        <libro id="L0002" tipo_clase="didactico" num_pag="1328">
+            <titulo>Lehninger. Principios de Bioquímica</titulo>
+            <capitulos>
+                <capitulo num_pag="57">
+                    <titulo>Fundamentos celulares</titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="63">
+                    <titulo>Fundamentos químicos</titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="72">
+                    <titulo>Fundamentos físicos</titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+            </capitulos>
+            <indice>Fundamentos celulares, Fundamentos químicos, Fundamentos físicos (...)</indice>
+            <sinopsis>La primera edición de Principios de Bioquímica de Albert l. Lehninger, en 1970, supuso una auténtica
+                revolución en la enseñanza de esta materia y creó un modelo que se ha mantenido fiel a lo largo de las 
+                sucesivas ediciones durante más de cuatro décadas. Con esta obra, que siempre ha sido cuidadosamente 
+                actualizada, se han formado y desarrollado muchas generaciones de estudiantes, docentes e investigadores 
+                del mundo entero.
+
+                La bioquímica evoluciona de forma rápida y constante, y esta nueva edición, como sus predecesoras, 
+                reúne y ordena la información más actualizada y la pone a disposición tanto de los estudiantes que 
+                por primera vez se enfrentan a ella como de los expertos que la imparten, con un diseño que agiliza y 
+                facilita el estudio de la enorme cantidad de conocimiento científico que aporta.
+            </sinopsis>
+        </libro>
+        <libro id="L0003" tipo_clase="infantil" num_pag="160">
+            <titulo>Fray Perico y su borrico</titulo>
+            <capitulos>
+                <capitulo num_pag="8">
+                    <titulo>Esto eran 20 frailes...</titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="10">
+                    <titulo>Fray Perico</titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+                <capitulo num_pag="12">
+                    <titulo>Aprendiz de fraile</titulo>
+                    <contenido info="url"></contenido>
+                </capitulo>
+            </capitulos>
+            <indice>1. Esto eran 20 frailes..., 2. Fray Perico, 3. Aprendiz de fraile (...)</indice>
+            <sinopsis>En el siglo XIX, la llegada de Fray Perico y su borrico Calcetín va a trastornar la apacible 
+                existencia de los veinte frailes de un convento de Salamanca que viven haciendo el bien, y repartiendo 
+                lo poco que tienen. El convento no tardará en vivir situaciones disparatadas, llenas de humor y alegría, 
+                gracias a este simpático personaje.
+            </sinopsis>
+        </libro>
+    </libros>
+    <revistas>
+        <revista id="R0001" tipo_clase="informatica" num_pag="30">
+            <titulo>ComputerHoy</titulo>
+            <numero_revista>8</numero_revista>
+            <indice>El mejor procesador del mercado, AMD lanza sus nuevas tarjetas gráficas (...)</indice>
+            <secciones>
+                <seccion num_pag="2">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="10">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="3">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="5">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="4">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="2">
+                    <contenido info="url"></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R0002" tipo_clase="corazon" num_pag="30">
+            <titulo>Hola</titulo>
+            <numero_revista>15</numero_revista>
+            <indice>Coronación Carlos III, Reportaje sobre Ana de Armas, Acaba Sálvame (...)</indice>
+            <secciones>
+                <seccion num_pag="2">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="5">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="1">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="7">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="3">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="4">
+                    <contenido info="url"></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R0003" tipo_clase="coches" num_pag="30">
+            <titulo>Motor16</titulo>
+            <numero_revista>12</numero_revista>
+            <indice>Nuevo Mercedes, Renueva tu motor, Mejores anticongelantes (...)</indice>
+            <secciones>
+                <seccion num_pag="1">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="3">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="4">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="8">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="5">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="3">
+                    <contenido info="url"></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R0004" tipo_clase="investigacion" num_pag="30">
+            <titulo>Nature</titulo>
+            <numero_revista>56</numero_revista>
+            <indice>Transcriptasa inversa: nuevos logros, Terapia CAR-T cell: grandes avances, 
+                La telomerasa: la enzima de la juventud (...)
+            </indice>
+            <secciones>
+                <seccion num_pag="5">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="4">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="1">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="3">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="2">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="4">
+                    <contenido info="url"></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+
+        <revista id="R0000" tipo_clase="otras" num_pag="30">
+            <titulo>Rolling Stones Magazine</titulo>
+            <numero_revista>43</numero_revista>
+            <indice>MADCOOL: cartel y fechas, Guns 'n Roses y su gira por Europa, KISS: última gira</indice>
+            <secciones>
+                <seccion num_pag="3">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="5">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="7">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="4">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="2">
+                    <contenido info="url"></contenido>
+                </seccion>
+                <seccion num_pag="5">
+                    <contenido info="url"></contenido>
+                </seccion>
+            </secciones>
+        </revista>
+    </revistas>
+
+    <periodicos>
+        <periodico id="P0001" tipo_clase="nacional" fecha_publi="2023-02-01">
+            <secciones_p>
+                <seccion_p tipo_seccion="economica">
+                    <articulos>
+                        <articulo autor="Juan Sanchez Perez">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Daniel Francisco Guerra">
+                            <contenido info="url"></contenido>
+                        </articulo>
+
+                        <articulo autor="Javier Moreno">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="opinion">
+                    <articulos>
+                        <articulo autor="Manuela Martin">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Arturo Soria">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Alonso de Madrigal">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="deportes">
+                    <articulos>
+                        <articulo autor="Pablo Casillas">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Victor Fontan Garcia">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Marta Santos">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="nacional">
+                    <articulos>
+                        <articulo autor="desconocido">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Agustin Hurtado Gomez">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Beatriz Ros">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="internacional">
+                    <articulos>
+                        <articulo autor="Gustavo Moreno">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Maria Fernandez Ordesa">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Alejandro Sanz">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+            </secciones_p>
+            <indice>1. Economía, 2. Opinión, 3. Deportes, 4. Noticias nacionales, 5. Noticias internacionales</indice>
+        </periodico>
+
+        <periodico id="P0002" tipo_clase="internacional" fecha_publi="2023-05-03">
+            <secciones_p>
+                <seccion_p tipo_seccion="economica">
+                    <articulos>
+                        <articulo autor="Steven Spielberg">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Stephen King">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="George Lucas">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                 </seccion_p>
+
+                <seccion_p tipo_seccion="opinion">
+                    <articulos>
+                        <articulo autor="Laura Paussini">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Britney Spears">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Zack Efron">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="deportes">
+                    <articulos>
+                        <articulo autor="Laura Gallego Garcia">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Arturo Perez">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Alonso Parron Yuste">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="nacional">
+                    <articulos>
+                        <articulo autor="Marta Martin">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Sara Sanz">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Arturo Gomez">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+
+                <seccion_p tipo_seccion="internacional">
+                    <articulos>
+                        <articulo autor="Ana de Armas">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="desconocido">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                        
+                        <articulo autor="Anna">
+                            <contenido info="url"></contenido>
+                        </articulo>
+                    </articulos>
+                </seccion_p>
+            </secciones_p>
+            <indice>1. Economía, 2. Opinión, 3. Deportes, 4. Noticias nacionales, 5. Noticias internacionales</indice>
+        </periodico>
+    </periodicos>
+</biblioteca>
