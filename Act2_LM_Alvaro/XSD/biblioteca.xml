@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+            xsi:noNamespaceSchemaLocation= "biblioteca.xsd">
+    <libros>
+        <libro id="L0001" tipo_clase="Novela" paginas="321">
+            <titulo>La cabaña del lago</titulo>
+            <capitulos>
+                <capitulo paginas="20">
+                    <titulo>La desaparición de Chloe</titulo>
+                    <contenido informacion="http://www.biblioteca.com/lacasadellago/capitulo1.html"/>
+                </capitulo>
+                <capitulo paginas="32">
+                    <titulo>Un vecino sospechoso</titulo>
+                    <contenido informacion="http://www.biblioteca.com/lacasadellago/capitulo2.html"/>
+                </capitulo>
+                <capitulo paginas="45">
+                    <titulo>Pruebas en el maletero</titulo>
+                    <contenido informacion="http://www.biblioteca.com/lacasadellago/capitulo3.html"/>
+                </capitulo>
+            </capitulos>
+            <indice>Madre e hija. Secuestro. Candidata a película de tarde.</indice>
+            <sinopsis>
+                Clara y la pequeña Chloe se retiran a pasar unos días en la cabaña del lago, 
+                pero la desaparición de la hija destapará sospechas infundadas entre la comunidad.
+            </sinopsis>
+        </libro>
+
+        <libro id="L0002" tipo_clase="Infantil" paginas="54">
+            <titulo>Una lechuga en mi sopa</titulo>
+            <capitulos>
+                <capitulo paginas="6">
+                    <titulo>¿Qué es esa cosa verde?</titulo>
+                    <contenido informacion="http://www.biblioteca.com/unalechugaenmisopa/capitulo1.html"/>
+                </capitulo>
+                <capitulo paginas="5">
+                    <titulo>¡No me gustan las verduras!</titulo>
+                    <contenido informacion="http://www.biblioteca.com/unalechugaenmisopa/capitulo2.html"/>
+                </capitulo>
+                <capitulo paginas="18">
+                    <titulo>Ahora seré más fuerte</titulo>
+                    <contenido informacion="http://www.biblioteca.com/unalechugaenmisopa/capitulo3.html"/>
+                </capitulo>
+            </capitulos>
+            <indice>Educación. Alimentación. Buenos hábitos.</indice>
+            <sinopsis>
+                Gael no quiere comer porque ha descubierto algo asqueroso en su sopa.
+                Aunque no le gustan las verduras, pronto descubrirá el poder oculto
+                que tienen estos alimentos, que solo unos elegidos pueden apreciar.
+            </sinopsis>
+        </libro>
+    </libros>
+
+    <revistas>
+        <revista id="R0001" tipo_clase="Informática" paginas="86">
+            <titulo>Midjourney Prompts</titulo>
+            <numero>7</numero>
+            <indice>Imágenes realistas. Arte. Fotoperiodismo inventado.</indice>
+            <secciones_rev>
+                <seccion_rev paginas="8">
+                    <contenido informacion="http://www.biblioteca.com/midjourneyprompts/imageneslectores.html"/>
+                </seccion_rev>
+                <seccion_rev paginas="4">
+                    <contenido informacion="http://www.biblioteca.com/midjourneyprompts/realidadoficcion.html"/>
+                </seccion_rev>
+                <seccion_rev paginas="10">
+                    <contenido informacion="http://www.biblioteca.com/midjourneyprompts/derechosdeimagen.html"/>
+                </seccion_rev>
+            </secciones_rev>
+        </revista>
+
+        <revista id="R0002" tipo_clase="Corazón" paginas="86">
+            <titulo>La vida en rosa</titulo>
+            <numero>55</numero>
+            <indice>Letizia Ortiz. Nacho Cano. Penélope Cruz. Dani Martín.</indice>
+            <secciones_rev>
+                <seccion_rev paginas="9">
+                    <contenido informacion="http://www.biblioteca.com/lavidaenrosa/nuevasparejas.html"/>
+                </seccion_rev>
+                <seccion_rev paginas="4">
+                    <contenido informacion="http://www.biblioteca.com/lavidaenrosa/famosostirandolabasura.html"/>
+                </seccion_rev>
+                <seccion_rev paginas="12">
+                    <contenido informacion="http://www.biblioteca.com/lavidaenrosa/grandesmomentos.html"/>
+                </seccion_rev>
+                <seccion_rev paginas="5">
+                    <contenido informacion="http://www.biblioteca.com/lavidaenrosa/escandalos.html"/>
+                </seccion_rev>
+            </secciones_rev>
+        </revista>
+    </revistas>
+
+    <periodicos>
+        <periodico id="P0001" tipo_clase="Nacional" fecha="2023-05-15">
+            <secciones_per>
+                <seccion_per tipo="Económica">
+                    <articulos>
+                        <articulo autor="Pepe Salmón">
+                            <contenido informacion="http://www.biblioteca.com/eltablao/accionesenbancaespanola.html"/>
+                        </articulo>
+                        <articulo autor="Juan Pérez">
+                            <contenido informacion="http://www.biblioteca.com/eltablao/inversionaplazofijo.html"/>
+                        </articulo>
+                        <articulo autor="Matilde Escalonilla">
+                            <contenido informacion="http://www.biblioteca.com/eltablao/elorocomovalorseguro.html"/>
+                        </articulo>
+                    </articulos>
+                </seccion_per>
+                <seccion_per tipo="Opinión">
+                    <articulos>
+                        <articulo autor="Marta Cáceres">
+                            <contenido informacion="http://www.biblioteca.com/eltablao/elcalormitoorealidad.html"/>
+                        </articulo>
+                        <articulo autor="Pedro Martínez">
+                            <contenido informacion="http://www.biblioteca.com/eltablao/nuncaestaremospreparados.html"/>
+                        </articulo>
+                    </articulos>
+                </seccion_per>
+            </secciones_per>
+            <indice>Paro. Elecciones. Guerra. Corrupción.</indice>
+        </periodico>
+        <periodico id="P0002" tipo_clase="Internacional" fecha="2023-05-10">
+            <secciones_per>
+                <seccion_per tipo="Deportes">
+                    <articulos>
+                        <articulo autor="Tom Crew">
+                            <contenido informacion="http://www.biblioteca.com/thespacetimes/psgsfantasy.html"/>
+                        </articulo>
+                        <articulo autor="Mark Threepwood">
+                            <contenido informacion="http://www.biblioteca.com/thespacetimes/50bestliverpoolplayersever.html"/>
+                        </articulo>
+                        <articulo autor="Ellen McRide">
+                            <contenido informacion="http://www.biblioteca.com/thespacetimes/alookintomanchesterunited.html"/>
+                        </articulo>
+                    </articulos>
+                </seccion_per>
+                <seccion_per tipo="Internacional">
+                    <articulos>
+                        <articulo autor="Simon Brown">
+                            <contenido informacion="http://www.biblioteca.com/thespacetimes/australiadoesntexist.html"/>
+                        </articulo>
+                        <articulo autor="Allan Preston">
+                            <contenido informacion="http://www.biblioteca.com/thespacetimes/brazilneedsmoresamba.html"/>
+                        </articulo>
+                    </articulos>
+                </seccion_per>
+            </secciones_per>
+            <indice>European Union. Canada. Climate change. Civil rights.</indice>
+        </periodico>
+    </periodicos>
+</biblioteca>
